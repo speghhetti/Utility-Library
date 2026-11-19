@@ -9,8 +9,8 @@
  */
 
 function validatenumber(a) {
-  if (!Number.isFinite(a)) {
-    throw new TypeError("argumeny must be finite number");
+  if (!Number.isFinite(a) || a < 0) {
+    throw new TypeError("argument must be finite whole number");
   }
 }
 
